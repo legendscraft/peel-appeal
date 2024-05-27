@@ -87,9 +87,9 @@ File Structure
 The file structure is as follows:
 
 <dl>
-	<dd>Parent Folder (Name: PeelAppeal)</dd>
+	<b>Parent Folder (Name: PeelAppeal)</b>
+	<dd><b>Child Folders and files:</b></dd>
 		<dt>
-			Child Folders and files:
 			<ul>
 				<li>HTML</li>
 				<li>PHP</li>
