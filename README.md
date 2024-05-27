@@ -18,16 +18,16 @@ This will ensure that it remains lightweight, easy to maintain, and accessible.
 
 Here are the key features they would like the web application to have:
 ------------------------------------------------------------------------
-> Product Listing: A section to display the different types of bananas they sell.
-> Delivery Destinations: A page that lists the various delivery destinations they serve
+1. Product Listing: A section to display the different types of bananas they sell.
+2. Delivery Destinations: A page that lists the various delivery destinations they serve
 	- This should include an option to add extra delivery destinations.
-> Company Description: A dedicated page describing Peel Appeal, their mission, values, and what sets them apart from other banana sellers.
-> Contact Details: An easy-to-find section that provides their contact details.
-> Clientele Distribution: A page that will show the number of our dedicated clients per delivery destination.
-> Logo: Additionally, they would also like you to design a logo for their company.
-> Theme: They have requested that the color theme on the website should match or be close to the actual banana color.
-> Feel free to be more creative with other parts of the website
-> For now the website must not have the sign-up and sign-in implementation (this will be in version 2)
+3. Company Description: A dedicated page describing Peel Appeal, their mission, values, and what sets them apart from other banana sellers.
+4. Contact Details: An easy-to-find section that provides their contact details.
+5. Clientele Distribution: A page that will show the number of our dedicated clients per delivery destination.
+6. Logo: Additionally, they would also like you to design a logo for their company.
+7. Theme: They have requested that the color theme on the website should match or be close to the actual banana color.
+8. Feel free to be more creative with other parts of the website
+9. For now the website must not have the sign-up and sign-in implementation (this will be in version 2)
 	- Note that for your class project you MUST implememnt these features
 
 
@@ -37,6 +37,7 @@ DATABASE IMPLEMENTATION DESCRIPTION (Run the queries below):
 Create a database and the database user
 If you are using the command line you can use the commands below
 ------------------------------------------------------------------------
+<code>
 create database peel_appeal;
 
 CREATE USER 'peel_appeal_user'@'localhost' IDENTIFIED BY 'password';
@@ -44,10 +45,11 @@ CREATE USER 'peel_appeal_user'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL ON peel_appeal.* TO 'peel_appeal_user'@'localhost' WITH GRANT OPTION;
 
 FLUSH PRIVILEGES;
-
+</code>
 
 Create a table inside the database as follows :
 ------------------------------------------------------------------------
+<code>
 CREATE TABLE `peel_appeal`.`delivery_destinations` (
 	`id` INT(11) NOT NULL AUTO_INCREMENT , 
 	`destination` VARCHAR(255) NOT NULL , 
@@ -56,9 +58,11 @@ CREATE TABLE `peel_appeal`.`delivery_destinations` (
 	`created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , 
 	PRIMARY KEY (`id`)
 );
+</code>
 
 Insert some dummy data in the table
 ------------------------------------------------------------------------
+<code>
 INSERT INTO `delivery_destinations` (`id`, `destination`, `no_of_dedicated_clients`, `description`, `created_at`) VALUES
 (1, 'Nairobi', 10, 'Nairobi delivery destination', NOW()),
 (2, 'Kisumu', 15, 'Kisumu delivery destination', NOW()),
@@ -73,7 +77,7 @@ ALTER TABLE `delivery_destinations`
 ALTER TABLE `delivery_destinations`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
-
+</code>
 
 APPLICATION IMPLEMENTATION DESCRIPTION
 ========================================================================
@@ -82,14 +86,19 @@ File Structure
 ------------------------------------------------------------------------
 The file structure is as follows:
 
-> Parent Folder (Name: PeelAppeal)
-	> Child Folders and files:
-		> HTML
-		> PHP
-		> JS
-		> CSS
-		> README.md (Contains instructions and details about this application - this file)
-
+<dl>
+	<dd>Parent Folder (Name: PeelAppeal)</dd>
+		<dt>
+			Child Folders and files:
+			<ul>
+				<li>HTML</li>
+				<li>PHP</li>
+				<li>JS</li>
+				<li>CSS</li>
+				<li>README.md (Contains instructions and details about this application - this file)</li>
+			</ul>
+		</dt>
+</dl>
 HTML files should be inside the HTML folder, PHP files inside the PHP folder and so on
 
 Widnows: XAMPP
