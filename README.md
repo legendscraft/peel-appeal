@@ -8,11 +8,12 @@ Peel Appeal is a vibrant and energetic banana-selling company dedicated to provi
 As their business continues to grow, they recognize the need to have a professional web presence that will not only showcase their delightful products but also streamline their operations and enhance their customer experience.
 
 Consequently, they are looking for a straightforward yet effective web application that should be built using:
-
-	HTML, 
-	CSS, 
-	JavaScript, 
-	and Vanilla (Plain) PHP, 
+<ul>
+	<li>HTML,</li>
+	<li>CSS,</li>
+	<li>JavaScript,<li>
+	<li>and Vanilla (Plain) PHP,</li>
+</ul>
 
 This will ensure that it remains lightweight, easy to maintain, and accessible.
 
@@ -31,11 +32,11 @@ Here are the key features they would like the web application to have:
 	- Note that for your class project you MUST implememnt these features
 
 
-DATABASE IMPLEMENTATION DESCRIPTION (Run the queries below):
+DATABASE IMPLEMENTATION DESCRIPTION <br>(Run the queries below):
 ========================================================================
 
-Create a database and the database user
-If you are using the command line you can use the commands below
+Create a database and the database user. <br>
+If you are using the command line you can use the commands below:
 ------------------------------------------------------------------------
 <code>
 create database peel_appeal;
@@ -47,7 +48,7 @@ GRANT ALL ON peel_appeal.* TO 'peel_appeal_user'@'localhost' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 </code>
 
-Create a table inside the database as follows :
+Create a table inside the database as follows:
 ------------------------------------------------------------------------
 <code>
 CREATE TABLE `peel_appeal`.`delivery_destinations` (
@@ -60,7 +61,7 @@ CREATE TABLE `peel_appeal`.`delivery_destinations` (
 );
 </code>
 
-Insert some dummy data in the table
+Insert some dummy data in the table:
 ------------------------------------------------------------------------
 <code>
 INSERT INTO `delivery_destinations` (`id`, `destination`, `no_of_dedicated_clients`, `description`, `created_at`) VALUES
@@ -102,15 +103,15 @@ The file structure is as follows:
 HTML files should be inside the HTML folder, PHP files inside the PHP folder and so on
 
 Widnows: XAMPP
-	If you are using XAMPP on a Windows machine it should be in a directory similar to the one below:
+	If you are using XAMPP on a Windows machine it should be in a directory similar to the one below:<br>
 	C:\xampp\htdocs 
 
-	Follow this link for furtehr guidance
+	Follow this link for further guidance
 	https://medium.com/@adityasinghw84it/how-to-run-your-project-using-xampp-3a1c16a1fe0f
 
 
 Windows WAMP:
-	Your webserver root directory should be in a directory similar to the one below:
+	Your webserver root directory should be in a directory similar to the one below:<br>
 	C:\wamp\www
 
 
@@ -121,7 +122,7 @@ Linux:
 Access the Project in a Browser
 ------------------------------------------------------------------------
 Open a web browser and enter "http://localhost/application-folder-name" in the address bar. 
-Remeber to replace "application-folder-name" with the actual name of the folder where the application's files are.
+Remember to replace "application-folder-name" with the actual name of the folder where the application's files are.
 This will load the application's homepage or the default entry point, in this case it is the "index.html".
 In this case it should be "http://localhost/PeelAppeal"
 
