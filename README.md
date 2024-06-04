@@ -11,7 +11,7 @@ Consequently, they are looking for a straightforward yet effective web applicati
 <ul>
 	<li>HTML,</li>
 	<li>CSS,</li>
-	<li>JavaScript,<li>
+	<li>JavaScript,</li>
 	<li>and Vanilla (Plain) PHP,</li>
 </ul>
 
