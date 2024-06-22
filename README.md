@@ -146,5 +146,6 @@ Below are Installation Guides:
 
 NOTE: In your assigned projects, remember to commit and push any changes that you make to GitHub.
 
-
+<code>
 Copyright © 2024 Lawrence Kasera. All rights reserved.
+</code>
